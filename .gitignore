@@ -2,3 +2,6 @@
 .vscode
 Deploy/build
 Deploy/dist
+Deploy/Release
+Deploy/inno/*.iss
+Deploy/inno/*.tmp
