@@ -1,0 +1,22 @@
+{% extends "base_template.html" %}
+
+{% block title %}RAM Tu Map{% endblock %}
+
+{% block content %}
+
+    <form action="" method="post" enctype="multipart/form-data" novalidate>
+        <label for="callsign">INDICATIVO: </label>
+        <input type="text" id="callsign" name="callsign" /><br>
+
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" /><br>
+
+        <label for="mapcenter">Mapa Centrado En: </label>
+        <input type="text" id="mapcenter" name="mapcenter" /><br>
+
+        <label for="postImage">Fichero de datos:</label>
+        <input type="file" id="adifDataFile" name="adif_data_file" accept="image/png, image/jpeg, image/adif">
+
+        <input type="submit" id="ram2map" name="ramp2map" value="Generar Map" />
+    </form>
+{% endblock %}
